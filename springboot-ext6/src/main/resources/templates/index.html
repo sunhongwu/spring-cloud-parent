@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--/*@thymesVar id="title" type="java.lang.String"*/-->
+	<title th:text="${title}">测试页面</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link
+		th:href="|/js/ext6/classic/theme-classic/resources/theme-classic-all.css|"
+		rel="stylesheet" />
+	<script type="text/javascript"
+		th:src="|/js/ext6/ext-all-debug.js|"></script>
+	<!--/*@thymesVar id="address" type="java.lang.String"*/-->
+	<script type="text/javascript" th:src="|/js/springbootjs/${js}.js|"></script>
+	</head>
+	
+	<body></body>
+</html>

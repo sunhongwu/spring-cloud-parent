@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--/*@thymesVar id="title" type="java.lang.String"*/-->
+	<title th:text="${title}">测试页面</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/resources/ext-theme-access/ext-theme-access-all.css"
+		rel="stylesheet" />
+	
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/ext-all.js"></script>
+	<!--/*@thymesVar id="address" type="java.lang.String"*/-->
+	<script type="text/javascript" th:src="|/js/${address}.js|"></script>
+	</head>
+	
+	<body>
+		<div id = 'windowDiv'></div>
+		<button id='event1'>event1</button>
+		<button id='event2'>event2</button>
+		<button id='event3'>event3</button>
+	</body>
+</html>
